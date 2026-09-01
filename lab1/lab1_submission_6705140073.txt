@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140073
+timestamp: 2026-09-01T10:27:05Z
+hostname: ubuntu
+---[user: getent passwd]---
+ivan252:x:1001:1001::/home/ivan252:/bin/bash
+---[group: getent group]---
+research:x:1002:ivan252
+---[user-in-group: id]---
+uid=1001(ivan252) gid=1001(ivan252) groups=1001(ivan252),1002(research)
+---[file stat: home file mode/owner]---
+/home/ivan252/report_7627.txt mode=700 owner=ivan252 group=research
+---[sshd effective config]---
+port 2464
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: fc0020aa024eafaf53aa21f241e50ca384bf565061c0d7be781ec7fe42099c38
+===END LAB1 SUBMISSION===
